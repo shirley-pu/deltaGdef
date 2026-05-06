@@ -116,7 +116,7 @@ function calcU(r){
     var r0=document.getElementById("r0").value;
     var ka=document.getElementById("Ka").value;
     var kc=document.getElementById("Kc").value;
-    var alpha=document.getElementById("alpha").value;
+    var sigma=document.getElementById("sigma").value;
     var s=document.getElementById("s").value;
     if(document.getElementById("sRelaxed_button").checked){
         s=calcSmin();
@@ -128,7 +128,7 @@ function calcU(r){
 
     var u0=div(sub(d0,l),2);
 
-    var gamma=alpha/kc;
+    var gamma=sigma/kc;
     var beta=(4*ka)/(d0*d0*kc);
 
     var temp=sqrt(complex((gamma*gamma)-(4*beta),0));
